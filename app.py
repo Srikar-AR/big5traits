@@ -63,7 +63,7 @@ async def analyze_data(interview:Interview):
     try:
         text_data = interview.text_data
         traits = Personality_Detection_from_reviews_submitted(text_data)
-        result = {"Big 5 personality traits ": traits}
+        result = {"Big_5_personality_traits ": traits}
 
         return JSONResponse(content=result)
     except Exception as e:
